@@ -1,0 +1,65 @@
+<template>
+
+<h2 id="Element-with-label" class="slds-text-heading_medium slds-var-m-bottom_xx-small"> Opportunity Table</h2>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+    <thead>
+    <tr class="slds-line-height_reset">
+    <th class="" scope="col">
+    <div class="slds-truncate"></div>
+    </th>
+    <th class="" scope="col">
+        <div class="slds-truncate" title="Opportunity Name">Opportunity Name</div>
+    </th>
+    <th class="" scope="col">
+    <div class="slds-truncate" title="Stage Name">Stage Name</div>
+     </th>
+  <th class="" scope="col">
+  <div class="slds-truncate" title="Probability">Probability</div>
+  </th>
+  <th class="" scope="col">
+    <div class="slds-truncate" title="Amount">Amount</div>
+     </th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <template for:each={accList} for:item="oppObj">
+  <tr key={oppObj.Id}>
+  <th scope="col">
+  <div>
+     <!-- <lightning:input type="number" data-id={oppObj.Amount} label="Enter a number" /> -->
+  <!-- <lightning-input type="checkbox" data-id={oppObj.Id}></lightning-input> -->
+  </div>
+  </th>
+  <th scope="col">
+  <div>{oppObj.Name}</div>
+  </th>
+   <th scope="col">
+  <div>{oppObj.StageName}</div>
+  </th>
+  <th scope="col">
+   <div>{oppObj.Probability}</div>
+  </th>
+  <th scope="col">
+    <div>{oppObj.Amount}</div>
+    </th>
+     </tr>
+    </template>
+    </tbody>
+
+    <thead>
+        <tr>
+        <th class="" scope="col" style="color: rgb(234, 105, 7);">
+            <div class="slds-truncate" title="Amount" >Total</div>
+        </th>
+        <th colspan="2"><div></div></th>
+        <th><div>{total1}</div></th>
+        <th><div>{total}</div></th>
+             </tr>
+    </thead>
+     </table>
+    </template>
+    
+    
+    
+    
