@@ -1,0 +1,40 @@
+<!-- <template>
+    <div class="slds-form-element">
+            <label class="slds-checkbox_toggle slds-grid">
+             <span class="slds-form-element__label slds-m-bottom_none" style="background-color: rgb(170, 235, 16);" >On/Off</span>
+             <input type="checkbox" name="checkbox-toggle-18" value="checkbox-toggle-18" aria-describedby="checkbox-toggle-18" checked={showField} onchange={handleToggleChange}/>
+             <span id="checkbox-toggle-18" class="slds-checkbox_faux_container" aria-live="assertive">
+                <span class="slds-checkbox_faux"></span>
+                <span class="slds-checkbox_on">Enabled</span>
+                <span class="slds-checkbox_off">Disabled</span>
+             </span>
+            </label>
+    </div> -->
+    <!-- <lightning-button label="Toggle Field" variant="brand" onclick={toggleField}></lightning-button> -->
+     <!-- <template if:true={showField}> -->
+      <!-- <lightning-card>
+         <lightning-record-form record-id={recordId} object-api-name={objectApiName} fields={fields} onsuccess={handlesSave}>
+         </lightning-record-form> -->
+        <!-- <lightning-input label="Test" value={fieldValue}></lightning-input>
+     </template> 
+</template> -->
+
+<template>
+   <div class="slds-form-element" >
+           <label class="slds-checkbox_toggle slds-grid">
+            <span class="slds-form-element__label slds-m-bottom_none" style="background-color: rgb(170, 235, 16);" >On/Off</span>
+            <input type="checkbox" name="checkbox-toggle-18" value="checkbox-toggle-18" aria-describedby="checkbox-toggle-18" checked={showField} onchange={handleToggleChange}/>
+            <span id="checkbox-toggle-18" class="slds-checkbox_faux_container" aria-live="assertive">
+               <span class="slds-checkbox_faux"></span>
+               <span class="slds-checkbox_on">Enabled</span>
+               <span class="slds-checkbox_off">Disabled</span>
+            </span>
+           </label>
+   </div>
+   <template if:true={showField}>
+       <lightning-card>
+           <lightning-record-form record-id={recordId} object-api-name={objectApiName} fields={fields} onsuccess={handleSuccess}>
+           </lightning-record-form>
+       </lightning-card>
+   </template> 
+</template>
