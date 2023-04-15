@@ -1,0 +1,49 @@
+<!-- sldsValidatorIgnore -->
+
+<template>
+
+      <div class="demo-only">
+    
+           <div class="slds-button-group" role="group">
+    
+              <div class="slds-p-right_small">
+                    <!-- <div class="button_bg"> -->
+                   <lightning-button-menu class="slds-button " variant="border-inverse" label="DORA">
+    
+                  <lightning-menu-item label="Staging" onclick={navigateToDashboard} ></lightning-menu-item>
+    
+                  <lightning-menu-item label="Production" onclick={navigateToDashboard1} ></lightning-menu-item>
+                  <!-- <lightning-button label="Navigate to SFDCPoint" onclick={navigateToWebPage}></lightning-button> -->
+                </lightning-button-menu>
+</div>
+    
+    <!--         </div> -->
+    
+              <div class="slds-p-right_small">
+    
+              <button class="slds-button slds-button_inverse" onclick={navigateToDashboard}>Report</button>
+    
+           </div>
+    
+           <div class="slds-p-right_small">
+    
+         <button class="slds-button slds-button_inverse">Test Automation</button>
+    
+          </div>
+    
+          <div>
+    
+          <button class="slds-button slds-button_inverse">Resiliency</button>
+    
+         </div>
+
+        <div>
+        <lightning-button label="Redirection" onclick={navigateToWebPage}></lightning-button>
+
+       </div>
+    
+       </div>
+    
+    </div>
+    
+    </template>

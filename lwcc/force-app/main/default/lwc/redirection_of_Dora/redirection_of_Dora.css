@@ -1,0 +1,25 @@
+/* .search_place {
+    top: 27%;
+    position: absolute;
+    min-width: 0;
+    right: 75%;
+}
+.colorarra{
+    background-color: #110353;
+}
+.red-button{
+    background-color: #bfbfbf00;
+    border: 1px solid white;
+    
+} */
+
+.demo-only{
+    background-color: #16325c;
+    padding: 6px;
+    width: fit-content;
+}
+
+.button_bg{
+    background-color: transparent;
+    color: white;
+}
