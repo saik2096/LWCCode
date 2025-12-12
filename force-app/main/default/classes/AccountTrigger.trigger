@@ -10,6 +10,7 @@ trigger AccountTrigger on Account (before insert, before update, after insert, a
 
         if (Trigger.isUpdate) {
             // Runs before record is updated
+            //go away
             for (Account acc : Trigger.new) {
                 if (acc.Name != Trigger.oldMap.get(acc.Id).Name) {
                     acc.Description = 'Name was updated';
