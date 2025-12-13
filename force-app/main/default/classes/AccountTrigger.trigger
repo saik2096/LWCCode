@@ -5,6 +5,7 @@ trigger AccountTrigger on Account (before insert, before update, after insert, a
             // Runs before record is inserted
             for (Account acc : Trigger.new) {
                 acc.Description = 'Created from trigger';
+                System.debug('Setting description for new Account: ' + acc.Name);
             }
         }
 
